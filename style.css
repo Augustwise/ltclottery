@@ -1,0 +1,150 @@
+body {
+    font-family: "Exo 2", sans-serif;
+    background-color: #17212F;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lottery-info {
+    background-color: #1d2c44;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    max-width: 1024px;
+    margin: 20px auto;
+}
+
+.lottery-info h1 {
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lottery-info p {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.authorization {
+    background-color: #1d2c44;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1024px;
+    margin: 20px auto;
+}
+
+.authorization h2 {
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.authorization p {
+    font-weight: 400;
+    text-align: center;
+}
+
+.authorization span {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.authorization input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.authorization button {
+    background-color: #40454b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.authorization button:hover {
+    background-color: #525861;
+}
+
+.popup {
+    display: none;
+    /* Окно скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #1d2c44;
+    padding: 30px;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.popup-content input {
+    font-size: 1.5em;
+    text-align: center;
+    border: none;
+    background-color: #2a3b55;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.popup-content input:focus {
+    outline: none;
+}
+
+.popup-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .popup-content {
+        width: 80%;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
