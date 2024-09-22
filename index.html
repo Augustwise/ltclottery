@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Lottery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <section class="lottery-info">
+            <h1>Crypto Lottery</h1>
+            <p>Здесь будет информационный блок с текстом про лотерею</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac nibh sapien. Ut luctus turpis sit
+                amet
+                consectetur blandit. Vivamus consectetur nulla sit amet ligula facilisis, et vehicula quam bibendum.
+                Aenean
+                quam turpis, tincidunt vel luctus dignissim, mollis suscipit augue. In aliquet felis tortor, sit amet
+                dictum
+                ipsum hendrerit in.</p>
+        </section>
+
+        <section class="authorization">
+            <h2>Авторизация</h2>
+            <p>Введите свой адрес Litecoin для <span>вывода</span></p>
+            <input type="text" placeholder="Litecoin Address">
+            <button id="participateBtn">Участвовать</button>
+        </section>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Адрес для пополнения (копируется при нажатии):</h2>
+            <input type="text" id="generatedAddress" readonly>
+            <p>Стоимость билета: 0.002 LTC. <br>Можно купить только один билет!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
